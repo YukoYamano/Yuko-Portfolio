@@ -5,14 +5,14 @@ const app = express();
 const path = require('path');
 const PORT = 3000;
 
-//app.set('views', path.join(__dirname,'views'));
+const publicDirectoryPath = path.join(__dirname, '../public');
 app.set('view engine','ejs');
 
 //console.log(__dirname);  //server
 //console.log(__filename); //server.js
+console.log(publicDirectoryPath);
 
-//We need to write this code to use bootstrap
-//app.use(express.static(path.join(__dirname, '../node_modules/bootstrap/dist')));
+app.use(express.static(publicDirectoryPath));
   
 //requireでuser.jsを読み込む
 const userRouter = require("../router/user");

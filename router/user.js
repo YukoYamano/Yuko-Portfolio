@@ -10,12 +10,12 @@ router.get("/",(req,res)=>{
 });
 
 //user
-router.get("/user",(req,res)=>{
-    res.render('user');
+router.get("/portfolio",(req,res)=>{
+    res.render('portfolio');
 });
 //info
-router.get("/info",(req,res)=>{
-    res.render('info');   
+router.get("/resume",(req,res)=>{
+    res.render('resume');   
 });
 
 //モジュール化して、外部で利用できるようにする
