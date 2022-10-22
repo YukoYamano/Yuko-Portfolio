@@ -18,5 +18,10 @@ router.get("/resume",(req,res)=>{
     res.render('resume');   
 });
 
+//contact
+router.get("/contact",(req,res)=>{
+    res.render('contact');   
+});
+
 //モジュール化して、外部で利用できるようにする
 module.exports=router;
