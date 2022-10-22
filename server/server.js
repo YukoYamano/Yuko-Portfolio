@@ -10,7 +10,7 @@ app.set('view engine','ejs');
 
 //console.log(__dirname);  //server
 //console.log(__filename); //server.js
-console.log(publicDirectoryPath);
+//console.log(publicDirectoryPath);
 
 app.use(express.static(publicDirectoryPath));
   
