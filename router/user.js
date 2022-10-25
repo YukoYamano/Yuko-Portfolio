@@ -6,7 +6,9 @@ const router = express.Router();
 
 //index - landing page
 router.get("/",(req,res)=>{
-    res.render('index');
+    res.render('index',{
+        name: 'Yuko Yamano'
+    });
 });
 
 //user
